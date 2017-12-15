@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--动态工厂-->
+    <bean id="factory" class="com.sqm.service02.ServiceFactory"/>
+    <bean id="userService" factory-bean="factory" factory-method="getUserService"/>
+     <!--静态工厂-->
+    <bean id="userService2" class="com.sqm.service02.ServiceFactory2" factory-method="getUserService"/>
+    <!--scope-->
+    <!--默认是scope="singletion"-->
+    <bean id="userService3" class="com.sqm.service02.UserServiceImpl" scope="singleton" />
+    <bean id="userService4" class="com.sqm.service02.UserServiceImpl" scope="prototype" />
+</beans>
