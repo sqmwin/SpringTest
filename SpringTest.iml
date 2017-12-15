@@ -10,8 +10,8 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -19,14 +19,13 @@
       <configuration>
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/applicationContext.xml</file>
-          <file>file://$MODULE_DIR$/src/applicationContext2.xml</file>
-          <file>file://$MODULE_DIR$/src/applicationContext2.xml</file>
         </fileset>
-        <fileset id="fileset2" name="ApplicationContext2" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/com/sqm/service02/applicationContext.xml</file>
-        </fileset>
+        <fileset id="fileset2" name="ApplicationContext2" removed="false" />
         <fileset id="fileset3" name="ApplicationContext3" removed="false">
           <file>file://$MODULE_DIR$/applicationContext3.xml</file>
+        </fileset>
+        <fileset id="fileset4" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/applicationContext2.xml</file>
         </fileset>
       </configuration>
     </facet>
